@@ -277,6 +277,17 @@
   }
 
   /* skills page */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+  .skills-repos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
   .skill-section{margin-bottom:20px;}
   .skill-section-title{font-size:11px;font-weight:600;color:var(--text-dim);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;font-family:var(--font-mono);}
   .layer-list{display:flex;flex-direction:column;gap:4px;margin-bottom:16px;}
@@ -408,7 +419,7 @@
     .stats-grid { grid-template-columns: repeat(2, 1fr); }
     .trophy-grid { grid-template-columns: repeat(2, 1fr); }
     /* Skills: stack the 2-col grid on narrow screens */
-    #content-area > div[style*="grid-template-columns: 2fr 1fr"] {
+    .skills-grid {
       grid-template-columns: 1fr !important;
     }
     /* About profile: tighter gap, smaller photo */
@@ -521,8 +532,10 @@
     .edu-card { padding: 14px 16px; }
 
     /* Skills: stack grids */
-    div[style*="grid-template-columns: 1fr 1fr"][class=""], 
-    div[style*="grid-template-columns: 2fr 1fr"] {
+    .skills-grid {
+      grid-template-columns: 1fr !important;
+    }
+    .skills-repos-grid {
       grid-template-columns: 1fr !important;
     }
 
@@ -1487,11 +1500,11 @@ function pageSkills(){
   return `
 <div class="container-header"><span class="dot"></span><span>CONTAINER: <strong>skills</strong></span><span class="sep">|</span><span>STATUS: <span class="run-green">running</span></span><span class="sep">|</span><span>PORT: <span class="port-blue">3001→3001</span></span></div>
 
-<div style="display:grid; grid-template-columns: 2fr 1fr; gap:16px; align-items: start;">
+<div class="skills-grid">
   <!-- Left Side: Repositories -->
   <div>
     <div style="font-family:var(--font-mono); font-size:11px; color:var(--text-dim); text-transform:uppercase; margin-bottom:10px; letter-spacing:.05em;">$ docker image ls --format "table {{.Repository}}\\t{{.Size}}\\t{{.Status}}"</div>
-    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
+    <div class="skills-repos-grid">
       ${gridHtml}
     </div>
   </div>

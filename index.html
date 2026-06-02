@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
@@ -1408,7 +1408,7 @@ function pageAbout(){return`
       <span>📍 Noida, India</span>
       <a href="https://github.com/naakaarafr" target="_blank">⌥ github.com/naakaarafr</a>
       <a href="https://linkedin.com/in/divvyansh-kudesiaa" target="_blank">in divvyansh-kudesiaa</a>
-      <a href="mailto:contact@divvyansh.dev">✉ contact@divvyansh.dev</a>
+      <a href="javascript:void(0)" onclick="window.location.href='mailto:'+atob('ZGl2dnlhbnNoa3VkZXNpYWExQGdtYWlsLmNvbQ==')">✉ ${atob('ZGl2dnlhbnNoa3VkZXNpYWExQGdtYWlsLmNvbQ==')}</a>
     </div>
   </div>
   <div class="profile-scan-container" onmouseenter="hoverSound()">
@@ -1613,10 +1613,10 @@ function pageContact(){return`
   <div id="ct-input-row"><span class="ct-prompt">divvyansh@portfolio:~$</span><input type="text" id="ct-input" placeholder="Type 'help' for commands..." autocomplete="off"/></div>
 </div>
 <div class="contact-socials">
-  <a class="soc-btn" href="mailto:contact@divvyansh.dev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email</a>
+  <a class="soc-btn" href="javascript:void(0)" onclick="window.location.href='mailto:'+atob('ZGl2dnlhbnNoa3VkZXNpYWExQGdtYWlsLmNvbQ==')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email</a>
   <a class="soc-btn" href="https://github.com/naakaarafr" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>GitHub</a>
   <a class="soc-btn" href="https://linkedin.com/in/divvyansh-kudesiaa" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a>
-  <a class="soc-btn" href="tel:+91-XXXXXXXXXX"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6.29 6.29l.87-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+91-XXXXXXXXXX</a>
+  <a class="soc-btn" href="javascript:void(0)" onclick="window.location.href='tel:'+atob('KzkxLTg4MjYxNTk5MzM=')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6.29 6.29l.87-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>${atob('KzkxLTg4MjYxNTk5MzM=')}</a>
 </div>`;}
 
 // ── CONTACT TERMINAL ──
@@ -1630,10 +1630,10 @@ function initContactTerm(){
   print('','ct-line-dim');
   const CMDS={
     help:()=>{print('Available commands:','ct-line-yellow');['email','github','linkedin','phone','hire me','whoami','ping','clear'].forEach(c=>print(`  <span class="hl">${c}</span>`,'ct-line-white'));},
-    email:()=>print('<span class="hl">contact@divvyansh.dev</span>','ct-line-white'),
+    email:()=>print('<span class="hl">'+atob('ZGl2dnlhbnNoa3VkZXNpYWExQGdtYWlsLmNvbQ==')+'</span>','ct-line-white'),
     github:()=>{window.open('https://github.com/naakaarafr','_blank');print('Opening <span class="hl">github.com/naakaarafr</span>...','ct-line-green');},
     linkedin:()=>{window.open('https://linkedin.com/in/divvyansh-kudesiaa','_blank');print('Opening <span class="hl">LinkedIn</span>...','ct-line-green');},
-    phone:()=>print('<span class="hl">+91-XXXXXXXXXX</span>','ct-line-white'),
+    phone:()=>print('<span class="hl">'+atob('KzkxLTg4MjYxNTk5MzM=')+'</span>','ct-line-white'),
     ping:()=>print('PONG! <span class="green-hl">Divvyansh is online</span>. Latency: <span class="green-hl">0ms</span>','ct-line-green'),
     whoami:()=>{print('<span class="hl">Divvyansh Kudesiaa</span>','ct-line-white');print('I am a systems thinker and AI engineer obsessed with building the next generation of autonomous intelligent software.','ct-line-dim');print('I live at the intersection of machine learning and systems architecture, designing agent swarms that bring deterministic control to complex problems.','ct-line-dim');},
     clear:()=>{out.innerHTML='';},
@@ -1641,7 +1641,7 @@ function initContactTerm(){
       successSound();
       ['██╗  ██╗██╗██████╗ ███████╗','██║  ██║██║██╔══██╗██╔════╝','███████║██║██████╔╝█████╗  ','██╔══██║██║██╔══██╗██╔══╝  ','██║  ██║██║██║  ██║███████╗','╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝'].forEach((l,i)=>setTimeout(()=>print(l,'ct-line-ascii'),i*80));
       setTimeout(()=>print('<span class="green-hl">INITIATING CONTACT PROTOCOL... ✓</span>','ct-line-green'),700);
-      setTimeout(()=>print('→ <span class="hl">contact@divvyansh.dev</span>','ct-line-blue'),900);
+      setTimeout(()=>print('→ <span class="hl">'+atob('ZGl2dnlhbnNoa3VkZXNpYWExQGdtYWlsLmNvbQ==')+'</span>','ct-line-blue'),900);
     },
   };
   inp.addEventListener('keydown',e=>{
@@ -1745,7 +1745,7 @@ document.getElementById('term-input').addEventListener('keydown', e => {
     } else if (cmd.startsWith('cat ')) {
       const file = cmdStr.slice(4).trim();
       if (file === 'about.html') termPrint('&lt;h1&gt;Divvyansh Kudesiaa&lt;/h1&gt;', 'ct-line-white');
-      else if (file === 'contact.txt') termPrint('contact@divvyansh.dev', 'ct-line-white');
+      else if (file === 'contact.txt') termPrint(atob('ZGl2dnlhbnNoa3VkZXNpYWExQGdtYWlsLmNvbQ=='), 'ct-line-white');
       else termPrint(`cat: ${file}: No such file or directory`, 'ct-line-yellow');
     } else {
       termPrint(`command not found: ${cmdStr}. Type 'help'`, 'ct-line-dim');
